@@ -56,7 +56,7 @@ def sms_reply():
                 f"Please respond like this:\n"
                 f"*My name is <your name>*")
         else:
-            reply = f"Ok, {user.full_name.upper(), goodbye}"
+            reply = f"Ok, {user.full_name.upper()}, goodbye"
         response.message(reply)
         responded = True
 
