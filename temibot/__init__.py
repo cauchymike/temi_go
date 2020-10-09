@@ -20,7 +20,7 @@ app.config['SQLALCHEMY_DATABASE_URI']=environ.get('CLEARDB_PINK_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #app.config['DROPBOX_TOKEN'] = environ.get('DROPBOX_TOKEN')
 #app.config['FLASK_APP'] = #environ.get('FLASK_APP')
-app.config['DEBUG'] = #environ.get('DEBUG')
+#app.config['DEBUG'] = #environ.get('DEBUG')
 app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
     "pool_size":20,
     "pool_pre_ping":True,
