@@ -16,16 +16,16 @@ load_dotenv(path.join(basedir, '.env'))
 
 
 app.config['SECRET_KEY']='mrvyuvbkiuybkiuniuyiuy'  #environ.get('SECRET_KEY')
-app.config['SQLALCHEMY_DATABASE_URI']="mysql+pymysql://root:seunmelody1993@localhost:3306/temigo"      #environ.get('CLEARDB_PINK_URL')
+app.config['SQLALCHEMY_DATABASE_URI']=environ.get('CLEARDB_PINK_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #app.config['DROPBOX_TOKEN'] = environ.get('DROPBOX_TOKEN')
 #app.config['FLASK_APP'] = #environ.get('FLASK_APP')
-app.config['DEBUG'] = environ.get('DEBUG')
-#app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
-    #"pool_size":20,
-    #"pool_pre_ping":True,
-    #"pool_recycle": 3600,
-#}
+app.config['DEBUG'] = #environ.get('DEBUG')
+app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
+    "pool_size":20,
+    "pool_pre_ping":True,
+    "pool_recycle": 3600,
+}
 
 
 
